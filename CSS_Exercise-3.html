@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #heading {
+      font-family: "Tahoma";
+      font-size: 18px;
+      color:#2c286d;
+    }
+
+    hr {
+      border: solid #db2927 1px;
+    }
+
+    p {
+      float: right;
+      font-family: "Tahoma";
+      font-size: 13px;
+      color:black;
+      padding-top: 2.8em;
+    }
+
+    p a {
+      text-decoration: none;
+      color: #045198;
+    }
+
+    #skype {
+      padding-left: 20px;
+    }
+
+    #vinsol {
+      color: #045198;
+      padding-right: 10px;
+    }
+
+    form {
+      margin:auto;
+      background-color: #ececec;
+      border: solid #bcbcbc 1px;
+      width: 500px;
+      padding: 20px 25px 20px 25px;
+    }
+
+    #submit {
+      background-color: #dc2927;
+      border:#a10200;
+      width: 130px;
+      height: 32px;
+      text-align: center;
+      font-family: "Tahoma";
+      font-size: 14px;
+      color:white;
+      margin-left: 120px;
+    }
+
+    .select_box {
+      margin-top: 9px;
+      margin-bottom: 11px;
+      color: #6f6f6f;
+      background-color: white;
+      width: 110px;
+      font-family: "Tahoma";
+      font-size: 13px;
+    }
+
+    #address {
+      background-color: white;
+      border: solid #b9b9b9 1px;
+      width: 360px;
+      height: 135px;
+    }
+
+    .input {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      background-color: white;
+      border: solid #b9b9b9 1px;
+      width: 360px;
+      height: 25px;
+    }
+/*
+    .label {
+      padding-right: 10px;
+      font-family: "Tahoma";
+      color: black;
+      font-size: 14px;
+      float: left;
+      text-align: right;
+    }*/
+
+    .label {
+      float:left;
+      margin-right:20px;
+      text-align:right;
+      width:100px;
+      font-family: "Tahoma";
+      color: black;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .gender {
+      font-family: "Tahoma";
+      font-size: 13px;
+      color: #6f6f6f;
+    }
+
+    input[type=radio] {
+      margin-top: 10px;
+    }
+
+    #form_container {
+      margin: auto;
+      width: 552px;
+    }
+
+    .radio {
+      margin-left: 30px;
+    }
+
+  </style>
+  <body>
+      <img src="/home/chirag/Downloads/vinsol-logo.png">
+      <p>
+        Email us at: <a href="MAILTO:sales@vinsol.com">sales@vinsol.com</a>
+        <span id="skype">Skype</span>:<span id="vinsol">Vinsol</span>
+      </p>
+      <hr/><br/>
+
+      
+      <div id="form_container">
+      <div id="heading">Please fill the form below</div>
+   
+      <form action="default.htm" method="post">
+
+        <label for="firstname" class="label">First Name</label>
+        <input type="text" class="input" id="first_name" name="first_name"><br/>
+        <label for="lastname" class="label">Last Name</label>
+        <input type="text" class="input" id="last_name" name="last_name"><br/>
+        <label for="email" class="label">Email Address</label>
+        <input type="email" class="input" id="email" name="email"><br/>
+        <label for="Password" class="label">Password</label>
+        <input type="password" class="input" id="password" name="password"><br/>
+        
+        <label for="gender" class="label">Gender</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male" class="gender">Male</label>
+        <input type="radio" class="radio" name="gender" id="female" value="female">
+        <label for="female" class="gender">Female</label><br/>
+        <label for="dob" class="label">Date of Birth</label>
+      
+        <select class="select_box" id="date" name="date">
+          <option id="1" value="1">01</option>
+          <option id="2" value="2">02</option>
+          <option id="3" value="3">03</option>
+          <option id="4" value="4">04</option>
+          <option id="5" value="5">05</option>
+          <option id="6" value="6">06</option>
+          <option id="7" value="7">07</option>
+          <option id="8" value="8">08</option>
+          <option id="9" value="9">09</option>
+          <option id="10" value="10">10</option>
+          <option id="11" value="11">11</option>
+          <option id="12" value="12">12</option>
+          <option id="13" value="13">13</option>
+          <option id="14" value="14">14</option>
+          <option id="15" value="15">15</option>
+          <option id="16" value="16">16</option>
+          <option id="17" value="17">17</option>
+          <option id="18" value="18">18</option>
+          <option id="19" value="19">19</option>
+          <option id="20" value="20">20</option>
+          <option id="21" value="21">21</option>
+          <option id="22" value="22">22</option>
+          <option id="23" value="23">23</option>
+          <option id="24" value="24">24</option>
+          <option id="25" value="25">25</option>
+          <option id="26" value="26">26</option>
+          <option id="27" value="27">27</option>
+          <option id="28" value="28">28</option>
+          <option id="29" value="29">29</option>
+          <option id="30" value="30">30</option>
+          <option id="31" value="31">31</option>
+        </select>
+        <select class="select_box" id="month" name="month">
+          <option id="1" value="1">01</option>
+          <option id="2" value="2">02</option>
+          <option id="3" value="3">03</option>
+          <option id="4" value="4">04</option>
+          <option id="5" value="5">05</option>
+          <option id="6" value="6">06</option>
+          <option id="7" value="7">07</option>
+          <option id="8" value="8">08</option>
+          <option id="9" value="9">09</option>
+          <option id="10" value="10">10</option>
+          <option id="11" value="11">11</option>
+          <option id="12" value="12">12</option>
+        </select>
+        <select class="select_box" id="year" name="year">
+          <option id="83" value="83">83</option>
+          <option id="84" value="84">84</option>
+          <option id="85" value="85">85</option>
+          <option id="86" value="86">86</option>
+          <option id="87" value="87">87</option>
+          <option id="88" value="88">88</option>
+          <option id="89" value="89">89</option>
+          <option id="90" value="90">90</option>
+          <option id="91" value="91">91</option>
+          <option id="92" value="92">92</option>
+          <option id="93" value="93">93</option>
+          <option id="94" value="94">94</option>
+          <option id="95" value="95">95</option>
+        </select><br/>
+        
+        <label for="address" class="label">Address</label>
+        <input type="text" id="address" name="address"></br></br>
+        <input type="submit" id="submit" value="Submit Details">
+      </form>
+    </div>
+  </body>
+</head>
+</html>
